@@ -51,3 +51,48 @@ int main() {
 }
 ```
 
+### Penggunaan Break
+```cpp
+#include <iostream>
+using namespace std;
+
+struct player_t {
+	int id;
+    string nama;
+    string asalDaerah;
+    string skill;
+};
+
+int main() {
+
+	// lua, r, python, ruby
+	// <namaVariabelnyaApa> = <nilaiVariabelnya>
+    
+  // c++, c, java
+	// <tipeNyaApa> <namaVariabelnyaApa> = <nilaiVariabelnya>
+    
+	player_t player[] = {
+    	{1, "Tono", "Garut", "mencuri"},
+        {2, "Dian", "Tangerang", "hacking"},
+        {3, "Budi", "Tasik", "memberontak"},
+        {4, "Nazeela", "Bogor", "cucipiring"},
+        {5, "Jamal", "Bandung", "menanampadi"}
+    };
+    
+    int idPlayerYangHarusDikeluarkan = 4;
+    
+    player[1].nama = "Dian May";
+    
+    for(int i = 0; i < 5; i++) {
+    
+    	if(player[i].id == idPlayerYangHarusDikeluarkan) {
+        	cout << "berbuat ulah nih si " << player[i].nama << " ayo keluarkan ! \n";
+            
+            break;
+        }
+    	
+    	cout << "lihat itu si " << player[i].nama << " sedang " << player[i].skill << "\n";
+    }
+  
+}
+```
