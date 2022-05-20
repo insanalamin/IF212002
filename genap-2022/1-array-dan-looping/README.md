@@ -1,9 +1,17 @@
 # Array dan Looping
 
+## Tools
+
 Untuk coding C++ secara online dapat menggunakan
 - [Programiz](https://www.programiz.com/cpp-programming/online-compiler/)
 - [OnlineGDB](https://www.onlinegdb.com/online_c++_compiler)
 - [W3Schools](https://www.w3schools.com/cpp/trycpp.asp?filename=demo_compiler)
+
+## Referensi
+- [W3 - While Loop](https://www.w3schools.com/CPP/cpp_while_loop.asp)
+- [W3 - Do While Loop](https://www.w3schools.com/CPP/cpp_do_while_loop.asp)
+- [W3 - For Loop](https://www.w3schools.com/CPP/cpp_for_loop.asp)
+- [W3 - Break & Continue](https://www.w3schools.com/CPP/cpp_break.asp)
 
 ## Pengulangan While
 
