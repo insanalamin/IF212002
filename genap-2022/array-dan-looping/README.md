@@ -7,16 +7,18 @@ Untuk coding C++ secara online dapat menggunakan
 
 ## Pengulangan While
 
+### Dasar
+
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-  int i = 0;
+  int jumlahTugas = 0;
   
-  while(i < 5) {
-    cout << i << "\n";
-    i++;
+  while(jumlahTugas < 5) {
+    cout << jumlahTugas << " tugas untuk dikerjakan\n";
+    jumlahTugas++;
   }
   
   return 0;
