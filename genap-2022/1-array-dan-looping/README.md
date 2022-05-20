@@ -122,3 +122,40 @@ int main() {
 
 }
 ```
+
+### Penggunaan Continue
+```cpp
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+struct warga_t {
+    int id;
+    string nama;
+    string pekerjaan;
+    int gaji;
+};
+
+int main() {
+    
+    int gajiMaksimalDapetSembako = 1500000;
+    
+    warga_t warga[] = {
+        {1, "Toyot", "pemborong", 500000},
+        {2, "Sarip", "pendekar", 1100000},
+        {3, "Yayat", "pemintaminta", 16000000},
+        {4, "Bahra", "basogerobak", 1300000},
+        {5, "Yuyun", "warung", 750000},
+    };
+    
+    for(int i = 0; i < 5; i++) {
+        
+        if(warga[i].gaji > gajiMaksimalDapetSembako) {
+            continue;
+        }
+        
+        cout << "Selamat, " << warga[i].nama << " sang " << warga[i].pekerjaan << " Anda dapet sembako \n";
+    }
+    
+}
+```
