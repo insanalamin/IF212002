@@ -33,6 +33,27 @@ int main() {
 }
 ```
 
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+  int langkah = 0;
+  int sampaiTujuan = 0;
+  
+  while (sampaiTujuan == 0) {
+    cout << langkah << "\n";
+    
+    if(langkah == 20) {
+        sampaiTujuan = 1;
+    }
+    
+    langkah++;
+  }
+  return 0;
+}
+```
+
 ### Deret Genap
 
 ```cpp
