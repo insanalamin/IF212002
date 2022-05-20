@@ -180,3 +180,26 @@ int main() {
     
 }
 ```
+
+### Cari bilangan antara 0 - 100 dapat dibagi 2 dan dibagi 3
+```cpp
+#include <iostream>
+using namespace std;
+
+// Ada berapa bilangan diantara 0 - 100 yang habis dibagi 2 dan habis dibagi 3 
+
+int main() {
+
+    // Total bilangan yang habis dibagi 2 dan 3
+    int n = 0;
+    for(int i = 0; i<101; i++) {
+        if(i%2==0 && i%3==0) {
+            n++;
+            cout << n << ". " << i << "\n";
+        }
+    }
+    
+    cout << "Ada " << n << " bilangan";
+
+}
+```
