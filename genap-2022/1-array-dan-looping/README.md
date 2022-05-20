@@ -57,7 +57,7 @@ int main() {
 using namespace std;
 
 struct player_t {
-	int id;
+    int id;
     string nama;
     string asalDaerah;
     string skill;
@@ -65,19 +65,19 @@ struct player_t {
 
 int main() {
 
-	// lua, r, python, ruby
-	// <namaVariabelnyaApa> = <nilaiVariabelnya>
+  // lua, r, python, ruby
+  // <namaVariabelnyaApa> = <nilaiVariabelnya>
     
   // c++, c, java
-	// <tipeNyaApa> <namaVariabelnyaApa> = <nilaiVariabelnya>
+  // <tipeNyaApa> <namaVariabelnyaApa> = <nilaiVariabelnya>
     
-	player_t player[] = {
+  player_t player[] = {
     	{1, "Tono", "Garut", "mencuri"},
         {2, "Dian", "Tangerang", "hacking"},
         {3, "Budi", "Tasik", "memberontak"},
         {4, "Nazeela", "Bogor", "cucipiring"},
         {5, "Jamal", "Bandung", "menanampadi"}
-    };
+  };
     
     int idPlayerYangHarusDikeluarkan = 4;
     
