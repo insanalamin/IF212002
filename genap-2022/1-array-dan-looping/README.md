@@ -203,3 +203,46 @@ int main() {
 
 }
 ```
+
+### Segitiga
+```cpp
+#include <iostream>
+using namespace std;
+
+/*
+*
+**
+***
+****
+*****
+******
+*****
+****
+***
+**
+*
+*/
+
+int main() {
+
+    int jumlahLangkah = 12;
+    
+    for(int langkah = 0; langkah < jumlahLangkah; langkah++) {
+        
+        int jumlahLangkahPer2 = jumlahLangkah/2;
+        
+        if(langkah <= jumlahLangkahPer2) {
+            for(int bintang = 0; bintang < langkah; bintang++) {
+                cout << "*";
+            }
+            cout << "\n";
+        } else {
+            for(int bintang = 0; bintang < (jumlahLangkah - langkah); bintang++) {
+                cout << "*";
+            }
+            cout << "\n";
+        }
+    }
+
+}
+```
