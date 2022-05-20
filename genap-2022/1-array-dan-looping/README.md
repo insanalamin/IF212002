@@ -24,3 +24,21 @@ int main() {
   return 0;
 }
 ```
+
+### Deret Genap
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+  int pengali = 0;
+  
+  while(pengali < 5) {
+    cout << pengali * 2 << " merupakan bilangan genap ke " << pengali << "\n";
+    pengali++;
+  }
+  
+  return 0;
+}
+```
