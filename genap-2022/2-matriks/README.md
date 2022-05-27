@@ -49,6 +49,11 @@ int main() {
     int panjangPeta = 20; // x
     int lebarPeta = 16; // y
     
+    int posisiKarakterY = 15;
+    int posisiKarakterX = 4;
+    
+    cout << "Karakter ada di y:" << posisiKarakterY << ", x:" << posisiKarakterX << "\n";
+    
     int peta[lebarPeta][panjangPeta] = {
         {8,8,8,8,8,8,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
         {8,8,8,8,8,8,1,1,1,1,1,1,1,5,5,1,1,1,1,1},
@@ -68,10 +73,15 @@ int main() {
         {1,1,1,1,1,1,1,1,1,1,6,1,1,1,1,1,1,1,1,1},
     };
     
-    
+    // Menampilkan grafik
     for(int y=0; y<lebarPeta; y++) {
         for(int x=0; x<panjangPeta; x++) {
-            cout << peta[y][x] << " ";
+            
+            if(posisiKarakterX == x && posisiKarakterY == y) {
+                cout << 0 << " ";
+            } else {
+                cout << peta[y][x] << " ";
+            }
         }
         cout << "\n";
     }
