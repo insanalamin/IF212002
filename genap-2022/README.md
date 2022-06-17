@@ -27,5 +27,5 @@ Selesaikan proyek game sederhana yang didalamnya mengandung bahasan-bahasan yang
 
 ## Kelas G
 
-- []()
+- [Zuhad HA](https://github.com/zuhadha)
 - []()
