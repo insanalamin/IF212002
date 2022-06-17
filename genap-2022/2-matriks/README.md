@@ -32,12 +32,15 @@
 ## Kode C++
 ```cpp
 #include <iostream>
+#include <conio.h>
 using namespace std;
 
 #define KEY_UP 72
 #define KEY_DOWN 80
 #define KEY_LEFT 75
 #define KEY_RIGHT 77
+
+// g++ -o pokemon.exe pokemon.cpp && pokemon.exe
 
 int main() {
     // Game pokemon
@@ -90,32 +93,40 @@ int main() {
     
     while(1) {
         // Input Keyboard
-        cout << "Masukan arrow key ";
-        cin >> arrowKey;
-        cout << "Arrow key yang dimasukan " << arrowKey << "\n";
+        
+        char ch[1] = {0};
+        ch[0] = _getch();
+        
+        //cout << "Masukan arrow key ";
+        //cin >> arrowKey;
+        //cout << "Arrow key yang dimasukan " << arrowKey << "\n";
         
         // Aturan menggerakkan karakter ke atas
-        if(arrowKey == 72 && (peta[posisiKarakterY-1][posisiKarakterX] == 1 || peta[posisiKarakterY-1][posisiKarakterX] == 4) && posisiKarakterY >= 0) {
+        if(ch[0] == 'i' && (peta[posisiKarakterY-1][posisiKarakterX] == 1 || peta[posisiKarakterY-1][posisiKarakterX] == 4) && posisiKarakterY >= 0) {
             // Gerakkan karakter ke atas
             posisiKarakterY = posisiKarakterY-1;
         }
         
         // Aturan menggerakkan karakter ke bawah
-        if(arrowKey == 80 && (peta[posisiKarakterY+1][posisiKarakterX] == 1 || peta[posisiKarakterY+1][posisiKarakterX] == 4) && posisiKarakterY < lebarPeta) {
+        if(ch[0] == 'k' && (peta[posisiKarakterY+1][posisiKarakterX] == 1 || peta[posisiKarakterY+1][posisiKarakterX] == 4) && posisiKarakterY < lebarPeta) {
             // Gerakkan karakter ke atas
             posisiKarakterY = posisiKarakterY+1;
         }
         
         // Aturan menggerakkan karakter ke kiri
-        if(arrowKey == 75 && (peta[posisiKarakterY][posisiKarakterX-1] == 1 || peta[posisiKarakterY][posisiKarakterX-1] == 4) && posisiKarakterX >= 0) {
+        if(ch[0] == 'j' && (peta[posisiKarakterY][posisiKarakterX-1] == 1 || peta[posisiKarakterY][posisiKarakterX-1] == 4) && posisiKarakterX >= 0) {
             // Gerakkan karakter ke atas
             posisiKarakterX = posisiKarakterX-1;
         }
         
         // Aturan menggerakkan karakter ke kanan
-        if(arrowKey == 77 && (peta[posisiKarakterY][posisiKarakterX+1] == 1 || peta[posisiKarakterY][posisiKarakterX+1] == 4) && posisiKarakterX < panjangPeta) {
+        if(ch[0] == 'l' && (peta[posisiKarakterY][posisiKarakterX+1] == 1 || peta[posisiKarakterY][posisiKarakterX+1] == 4) && posisiKarakterX < panjangPeta) {
             // Gerakkan karakter ke atas
             posisiKarakterX = posisiKarakterX+1;
+        }
+        
+        if(ch[0] == 'q') {
+          break;
         }
         
         // Render grafik
