@@ -4,8 +4,8 @@ Selesaikan proyek game sederhana yang didalamnya mengandung bahasan-bahasan yang
 ## Kelas F
 
 - [Pancadrya Y.P.](https://github.com/pancadrya/)
-- [sopian abdul malik](https://github.com/abdulsopian)
-- [](https://github.com/)
+- [sopian abdul malik]()
+- [Nada](https://github.com/nadqz/)
 - [](https://github.com/)
 - [](https://github.com/)
 - [](https://github.com/)
